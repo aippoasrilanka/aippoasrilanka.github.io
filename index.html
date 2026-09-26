@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AIPPOA Sri Lanka — All Island Private Pharmacy Owners Association">
+<title>AIPPOA Sri Lanka | All Island Private Pharmacy Owners Association</title>
+<style>
+:root{
+  --green:#18a83a; --green2:#0d7d2a; --dark:#071b10; --gold:#e7bd4d;
+  --muted:#66736b; --light:#f5faf6; --white:#fff; --shadow:0 18px 50px rgba(7,27,16,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+.topbar{background:#06140b;color:#dff5e4;font-size:13px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:20px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid #e7eee9}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:13px;font-weight:800}
+.brand img{width:58px;height:58px;object-fit:contain}.brand-text{line-height:1.05}.brand-text strong{display:block;font-size:18px}.brand-text span{font-size:10px;letter-spacing:1.5px;color:var(--green2)}
+nav{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:650}
+nav a:hover{color:var(--green)}
+.menu{display:none;border:0;background:var(--light);padding:10px 12px;border-radius:10px;font-size:20px}
+.hero{position:relative;overflow:hidden;background:
+ radial-gradient(circle at 85% 20%,rgba(24,168,58,.20),transparent 28%),
+ linear-gradient(135deg,#06170c 0%,#0b4020 55%,#0b7e2b 100%);color:#fff;padding:92px 0 82px}
+.hero:after{content:"";position:absolute;right:-120px;bottom:-180px;width:480px;height:480px;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 70px rgba(255,255,255,.03),0 0 0 140px rgba(255,255,255,.025)}
+.hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:55px;align-items:center;position:relative;z-index:1}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 13px;border-radius:30px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+h1{font-size:clamp(40px,5.5vw,72px);line-height:1.02;margin:20px 0 20px;letter-spacing:-2px}
+.hero p{font-size:18px;color:#d9eee0;max-width:670px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid transparent}
+.btn-primary{background:#fff;color:var(--green2)}.btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
+.hero-logo{display:flex;justify-content:center}.hero-logo img{width:min(390px,78%);filter:drop-shadow(0 25px 35px rgba(0,0,0,.28));border-radius:50%}
+section{padding:82px 0}.section-head{max-width:700px;margin-bottom:35px}.eyebrow{color:var(--green2);font-weight:800;font-size:12px;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(30px,4vw,46px);margin:8px 0 10px;line-height:1.1}.section-head p{color:var(--muted);margin:0}
+.stats{background:var(--light);padding:24px 0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#dfece2;border:1px solid #dfece2;border-radius:16px;overflow:hidden}.stat{background:#fff;padding:22px;text-align:center}.stat b{display:block;font-size:29px;color:var(--green2)}.stat span{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e5eee7;border-radius:18px;padding:25px;box-shadow:0 8px 28px rgba(7,27,16,.05);transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.icon{width:45px;height:45px;border-radius:12px;background:#eaf7ed;color:var(--green2);display:grid;place-items:center;font-size:22px;margin-bottom:15px}.card h3{margin:0 0 7px}.card p{margin:0;color:var(--muted);font-size:14px}
+.about{background:#f8fbf9}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-panel{background:linear-gradient(145deg,#0a2b15,#12852f);border-radius:24px;padding:42px;color:#fff;min-height:330px;position:relative;overflow:hidden}.about-panel img{position:absolute;right:-35px;bottom:-45px;width:240px;opacity:.18}.about-panel h3{font-size:30px;margin-top:0}.about-panel p{color:#d9eee0}.checks{display:grid;gap:12px;margin-top:22px}.check{display:flex;gap:10px;align-items:flex-start}.check b{color:var(--green2)}.check span{color:#405048}
+.event{background:#06170c;color:#fff}.event-grid{display:grid;grid-template-columns:1fr .9fr;gap:30px;align-items:center}.event h2{font-size:44px;line-height:1.1;margin:10px 0}.event p{color:#cfe5d5}.event-box{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);padding:25px;border-radius:18px}.event-row{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.1);padding:13px 0}.event-row:last-child{border-bottom:0}.event-row span{color:#bcd3c3}.event-row strong{color:#fff}
+.news{background:#fff}.news-card{overflow:hidden;padding:0}.news-body{padding:22px}.news-tag{font-size:11px;color:var(--green2);font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.cta{background:linear-gradient(135deg,#eaf7ed,#fff);border:1px solid #dcebe0;border-radius:24px;padding:42px;display:flex;justify-content:space-between;gap:25px;align-items:center}.cta h2{margin:0;font-size:34px}.cta p{margin:7px 0 0;color:var(--muted)}
+footer{background:#041009;color:#c6d8cb;padding:50px 0 20px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:35px}.footer-brand{color:#fff;font-size:19px;font-weight:800}.footer p{font-size:13px;color:#91aa99}.footer h4{color:#fff;margin-top:0}.footer a{display:block;font-size:13px;margin:8px 0;color:#b6cabe}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:900px){nav{display:none}.menu{display:block}.hero-grid,.about-grid,.event-grid{grid-template-columns:1fr}.hero-logo{order:-1}.hero-logo img{width:250px}.cards{grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){#members .card{display:block!important;padding:26px!important}#members .btn{margin-top:18px;width:100%}.topbar .container{display:block;text-align:center}.topbar .container span:last-child{display:none}.nav{height:72px}.brand img{width:48px;height:48px}.brand-text strong{font-size:15px}.brand-text span{font-size:8px}.hero{padding:62px 0}.hero p{font-size:16px}.cards,.stats-grid,.footer-grid{grid-template-columns:1fr}.cta{padding:28px;display:block}.cta .btn{margin-top:18px}section{padding:62px 0}.event h2{font-size:35px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>🇱🇰 All Island Private Pharmacy Owners Association</span><span>Serving pharmacy owners across Sri Lanka</span></div></div>
+
+<header>
+<div class="container nav">
+<a class="brand" href="#home"><img src="aippoa-logo.png" alt="AIPPOA logo"><div class="brand-text"><strong>AIPPOA SRI LANKA</strong><span>ALL ISLAND PRIVATE PHARMACY OWNERS ASSOCIATION</span></div></a>
+<nav>
+<a href="#about">About</a><a href="#activities">Activities</a><a href="#education">Education</a><a href="#events">Events</a><a href="#news">News</a><a href="members.html" class="members-nav">Members</a><a href="#contact">Contact</a>
+</nav>
+<button class="menu" onclick="toggleMenu()">☰</button>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="kicker">🇱🇰 National Association • Sri Lanka</div>
+<h1>United for Pharmacy.<br><span style="color:#b7efc5">Committed to Health.</span></h1>
+<p>All Island Private Pharmacy Owners Association — connecting pharmacy owners, strengthening professional knowledge, supporting communities and contributing to a healthier Sri Lanka.</p>
+<div class="buttons"><a class="btn btn-primary" href="#about">Discover AIPPOA</a><a class="btn btn-outline" href="#contact">Contact Association</a></div>
+</div>
+<div class="hero-logo"><img src="aippoa-logo.png" alt="AIPPOA Sri Lanka"></div>
+</div>
+</section>
+
+<div class="stats"><div class="container stats-grid">
+<div class="stat"><b>🇱🇰</b><span>Island-wide presence</span></div>
+<div class="stat"><b>25+</b><span>District network</span></div>
+<div class="stat"><b>1000+</b><span>Members vision</span></div>
+<div class="stat"><b>11th</b><span>Annual Conference 2026</span></div>
+</div></div>
+
+<section id="members" style="padding:58px 0;background:#fff;">
+<div class="container">
+<div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:25px;padding:30px 34px;background:linear-gradient(135deg,#f1faF3,#fff);border-color:#dcebe0;">
+<div>
+<div class="eyebrow">AIPPOA Member Network</div>
+<h2 style="margin:7px 0 6px;font-size:30px;">AIPPOA Members Directory</h2>
+<p style="margin:0;color:var(--muted);">Explore the Badulla District member directory, including membership numbers, pharmacy names and locations.</p>
+</div>
+<a class="btn" style="background:#0d7d2a;color:#fff;white-space:nowrap;" href="members.html">View Members →</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="container about-grid">
+<div class="about-panel"><img src="aippoa-logo.png" alt=""><h3>One Association.<br>One Professional Voice.</h3><p>AIPPOA brings private pharmacy owners together to promote knowledge, cooperation, responsible pharmacy practice and community service.</p></div>
+<div><div class="section-head"><div class="eyebrow">About AIPPOA</div><h2>Building a stronger pharmacy community</h2><p>A national platform for collaboration, education, representation and service.</p></div>
+<div class="checks">
+<div class="check"><b>✓</b><span><strong>Unity & representation</strong> — creating a common platform for private pharmacy owners.</span></div>
+<div class="check"><b>✓</b><span><strong>Education</strong> — encouraging continuous learning and knowledge sharing.</span></div>
+<div class="check"><b>✓</b><span><strong>Community service</strong> — supporting people through health and humanitarian initiatives.</span></div>
+<div class="check"><b>✓</b><span><strong>Professional development</strong> — promoting better pharmacy practice and responsible service.</span></div>
+</div></div>
+</div>
+</section>
+
+<section id="activities">
+<div class="container">
+<div class="section-head"><div class="eyebrow">What We Do</div><h2>From pharmacy education to community service</h2><p>Key areas can be expanded as the association grows.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🤝</div><h3>Member Network</h3><p>Connect pharmacy owners and district associations through a national professional network.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Education</h3><p>Quizzes, training, workshops and educational resources designed for continuous development.</p></div>
+<div class="card"><div class="icon">🏆</div><h3>Awards & Recognition</h3><p>Celebrate achievements of members, pharmacies and district associations.</p></div>
+<div class="card"><div class="icon">❤️</div><h3>Community Service</h3><p>Medical camps, disaster support, donations and health-focused community initiatives.</p></div>
+<div class="card"><div class="icon">🗺️</div><h3>District Associations</h3><p>Showcase district committees, activities, announcements and local programmes.</p></div>
+<div class="card"><div class="icon">📢</div><h3>News & Updates</h3><p>One trusted place for association announcements, events and member communications.</p></div>
+</div>
+</div>
+</section>
+
+<section id="education" class="about">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Education & Training</div><h2>Knowledge that strengthens pharmacy practice</h2><p>A dedicated area for AIPPOA educational programmes and resources.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🧠</div><h3>Quiz Star</h3><p>Weekly pharmacy knowledge challenges and recognition for outstanding participants.</p></div>
+<div class="card"><div class="icon">🎓</div><h3>Training Programmes</h3><p>Workshops and learning sessions for pharmacy owners and pharmacy staff.</p></div>
+<div class="card"><div class="icon">📄</div><h3>Resources</h3><p>Guidelines, notices, educational materials, certificates and downloadable documents.</p></div>
+</div>
+</div>
+</section>
+
+<section id="events" class="event">
+<div class="container event-grid">
+<div><div class="eyebrow" style="color:#a9eab8">Featured Event</div><h2>11th AIPPOA Annual Conference 2026</h2><p>A national gathering bringing pharmacy owners together for fellowship, education, recognition and the future of private pharmacy in Sri Lanka.</p><a class="btn btn-primary" href="#contact">Event Information</a></div>
+<div class="event-box">
+<div class="event-row"><span>Date</span><strong>03 October 2026</strong></div>
+<div class="event-row"><span>Venue</span><strong>Citrus Hotel, Waskaduwa</strong></div>
+<div class="event-row"><span>Travel</span><strong>Badulla → Waskaduwa</strong></div>
+<div class="event-row"><span>Theme</span><strong>Unity • Knowledge • Service</strong></div>
+</div>
+</div>
+</section>
+
+<section id="news" class="news">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Latest</div><h2>News & announcements</h2><p>Replace these sample cards with live AIPPOA news, notices and district updates.</p></div>
+<div class="cards">
+<div class="card news-card"><div class="news-body"><div class="news-tag">Conference</div><h3>11th Annual Conference 2026</h3><p>National conference information, programme and participation updates.</p></div></div>
+<div class="card news-card"><div class="news-body"><div class="news-tag">Education</div><h3>Quiz Star Badulla District</h3><p>Celebrating pharmacy knowledge, learning and achievement.</p></div></div>
+<div class="card news-card"><div class="news-body"><div class="news-tag">Community</div><h3>Serving communities</h3><p>Updates from AIPPOA health camps and community support initiatives.</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="cta"><div><h2>Connect with AIPPOA Sri Lanka</h2><p>Membership, district association information, events and official enquiries.</p></div><a class="btn" style="background:#0d7d2a;color:#fff" href="mailto:info@aippoa.lk">Contact AIPPOA</a></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-grid">
+<div><div class="footer-brand">AIPPOA SRI LANKA</div><p>All Island Private Pharmacy Owners Association. A professional platform for unity, education, representation and community service.</p></div>
+<div><h4>Association</h4><a href="#about">About</a><a href="#activities">Activities</a><a href="#education">Education</a></div>
+<div><h4>Information</h4><a href="#events">Events</a><a href="#news">News</a><a href="#contact">Contact</a></div>
+<div><h4>Members</h4><a href="members.html">Members Directory</a><a href="#contact">Membership</a><a href="#education">Resources</a><a href="#events">Conference</a></div>
+</div>
+<div class="container copyright"><span>© 2026 AIPPOA Sri Lanka. All rights reserved.</span><span>Designed for AIPPOA Sri Lanka</span></div>
+</footer>
+
+<script>
+function toggleMenu(){
+ const nav=document.querySelector('nav');
+ const open=nav.style.display==='flex';
+ nav.style.display=open?'none':'flex';
+ if(!open){nav.style.position='absolute';nav.style.top='72px';nav.style.left='4%';nav.style.right='4%';nav.style.background='#fff';nav.style.padding='18px';nav.style.border='1px solid #e5eee7';nav.style.borderRadius='14px';nav.style.flexDirection='column';nav.style.alignItems='stretch';nav.style.boxShadow='0 15px 35px rgba(0,0,0,.12)'}
+}
+</script>
+</body>
+</html>
