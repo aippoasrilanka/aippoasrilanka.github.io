@@ -102,7 +102,68 @@ footer{background:#041009;color:#c6d8cb;padding:50px 0 20px}.footer-grid{display
 .agm-overlay p{margin:0;color:#dff2e4;font-weight:600}
 @media(max-width:700px){.agm-highlight{padding:42px 0}.agm-badge{left:14px;top:14px;font-size:10px}.agm-overlay{padding:20px 18px}.agm-overlay p{font-size:13px}}
 
-</style>
+.service-section{
+  padding:70px 0;
+  background:#f5faf7;
+}
+
+.service-section .section-head{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.service-section .section-head h2{
+  color:#075b3a;
+  font-size:clamp(28px,4vw,42px);
+  margin:8px 0;
+}
+
+.service-section .section-head p{
+  color:#666;
+  font-size:18px;
+  margin:0;
+}
+
+.service-gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.service-gallery img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  border-radius:16px;
+  display:block;
+  box-shadow:0 6px 18px rgba(0,0,0,.12);
+  transition:transform .3s ease;
+}
+
+.service-gallery img:hover{
+  transform:scale(1.03);
+}
+
+@media(max-width:900px){
+  .service-gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .service-section{
+    padding:45px 15px;
+  }
+
+  .service-gallery{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .service-gallery img{
+    height:250px;
+  }
+}</style>
 </head>
 <body>
 <div class="topbar"><div class="container"><span>🇱🇰 All Island Private Pharmacy Owners Association</span><span>Serving pharmacy owners across Sri Lanka</span></div></div>
