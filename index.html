@@ -709,14 +709,18 @@ EXECUTIVE COMMITTEE
 }
 
 .humanitarian-gallery img {
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
-background: #f5faf6;
-  border-radius: 12px;
-  display: block;
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+    display: block;
 }
-</style>
+
+@media (max-width: 600px) {
+    .humanitarian-gallery img {
+        height: 180px !important;
+    }
+        }</style>
 
 <div class="humanitarian-gallery">
         <img src="Home-Project-1.jpg" alt="AIPPOA humanitarian home project">
