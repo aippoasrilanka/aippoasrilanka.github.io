@@ -699,7 +699,24 @@ EXECUTIVE COMMITTEE
         </p>
       </div>
 
-      <div class="humanitarian-gallery">
+      <style>
+.humanitarian-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.humanitarian-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+</style>
+
+<div class="humanitarian-gallery">
         <img src="Home-Project-1.jpg" alt="AIPPOA humanitarian home project">
         <img src="Home-Project-2.jpg" alt="AIPPOA humanitarian home project">
         <img src="Home-Project-3.jpg" alt="AIPPOA humanitarian home project">
